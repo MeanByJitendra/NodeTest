@@ -1,0 +1,15 @@
+<script>
+    function msg(){
+        this.m1 = function(){
+            document.write("<br/> M1 called");
+        }
+        this.m2 = function(){
+            document.write("<br/> M2 called");
+        }
+        this.m3 = function(){
+            document.write("<br/> M3 called");
+        }
+    }
+  var obj = new msg();
+  obj.m3();  
+</script>

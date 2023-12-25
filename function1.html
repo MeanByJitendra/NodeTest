@@ -1,0 +1,13 @@
+<script>
+    function Addf(a,b,c1,c2){
+        var res = a+b;
+        document.write("<br>Addition : "+res);
+        c1(res);
+        c2();
+    }
+    Addf(11,20,(n)=>{
+      n%2 ? document.write("<br/>odd"):document.write('<br/>Even');
+    },()=>{
+        document.write('<br/> c2 called');
+    }); 
+</script>
